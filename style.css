@@ -1,0 +1,926 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 599px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+#landingPage {
+  background: #020296;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (min-width: 500px) {
+  #landingPage {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+/* National ID DIV */
+.National {
+  width: 50%;
+  margin-inline: auto;
+  white-space: nowrap;
+
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Coat of arms logo */
+#logoImage {
+  margin-inline: auto;
+  padding-top: 100px;
+  width: 50%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* safer div*/
+#safer {
+  margin-inline: auto;
+  width: clamp(0px, 50%, 1200px);
+  margin-top: 60px;
+  white-space: nowrap;
+  overflow: visible;
+  text-align: center;
+}
+
+#safer p {
+  color: rgb(218, 216, 216);
+}
+
+/* get Started btn */
+#getStarted {
+  margin-top: 100px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 800;
+  padding: 1em 7em;
+  cursor: pointer;
+}
+
+/* getStarted div */
+#get {
+  text-align: center;
+  margin-inline: auto;
+  white-space: nowrap;
+  width: clamp(250px, 80%, 500px);
+  box-sizing: border-box;
+}
+
+/* login div */
+#login {
+  margin-top: 60px;
+  margin-inline: auto;
+  white-space: nowrap;
+  width: clamp(250px, 50%, 1200px);
+
+  text-align: center;
+}
+
+#login a {
+  color: white;
+  text-decoration: none;
+}
+
+#login p {
+  color: gray;
+}
+
+/* Create account section styling */
+#createAcccount {
+  width: clamp(250px, 100%, 1200px);
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* create account heading */
+
+/* create account div */
+#createAccount {
+  color: black;
+  background-color: white;
+  max-width: 1200px;
+  min-height: 100vh;
+  white-space: break-word;
+  margin-inline: auto;
+  display: none;
+}
+/* Create account heading  div */
+#createAccount-title {
+  display: flex;
+  gap: 20px;
+  padding-left: 2em;
+  color: #030355;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* create account back arrow */
+#createAccount-title i {
+  margin-top: 20px;
+  color: #030355;
+  margin-inline: start;
+  font-weight: 800;
+}
+
+/* back button */
+.backbtn {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* create account wording div */
+.account {
+  margin-inline: start;
+  width: clamp(250px, 50%, 1200px);
+}
+
+/* crate account intro div */
+.intro {
+  width: clamp(250px, 100%, 1200px);
+
+  margin-inline: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #0d1f70;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* inputs field styling */
+
+/* full name field and all other input in creating account  div*/
+.inputsfullname {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  width: clamp(250px, 98%, 1200px);
+  margin-inline: auto;
+  border-radius: 10px;
+  color: rgb(21, 68, 155);
+}
+
+/* the input use in the full name and all inputs in the create account section  */
+.input {
+  padding: 8px;
+  border: none;
+}
+
+/* the submit button */
+#submit {
+  background: #0f0fe9;
+  width: clamp(250px, 95%, 1200px);
+  color: #ffffff;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #2b2bfc;
+}
+
+/* submit btn div */
+.submitDiv {
+  margin-inline: auto;
+  box-sizing: border-box;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* span of  condition and privacy */
+span {
+  color: rgb(10, 86, 250);
+}
+
+/* terms and condition div */
+#condition {
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(49, 48, 48);
+}
+
+/* Home or dash board */
+#dashboardHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  gap: 20px;
+  background: rgb(6, 47, 134);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* this is the section that display the user name */
+#userName {
+  width: clamp(250px, 60%, 1200px);
+  text-align: center;
+}
+
+/* username span */
+
+#userName span {
+  font-size: 1.6em;
+  color: white;
+}
+
+/* this is styling for the logo next to the user */
+#userLogo {
+  background-color: rgb(104, 110, 127);
+  width: clamp(60px, 10%, 1200px);
+  text-align: center;
+  padding: 10px;
+  font-size: 3em;
+  border-radius: 400%;
+  border-left: 5px solid rgb(141, 255, 200);
+  border-right: 5px solid rgb(124, 210, 213);
+  border-top: 3px solid rgb(124, 210, 213);
+  border-top: 3px solid rgb(124, 210, 213);
+}
+
+#usergreeting {
+  background: black;
+}
+
+@media (min-width: 500px) {
+  #userLogo {
+    border-radius: 40px;
+  }
+}
+
+/* the application area */
+#apply {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+  background: white;
+  width: clamp(200px, 95%, 800px);
+  margin-inline: auto;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+
+/* direction paragraph div styling */
+#directionParagraph {
+  width: clamp(200px, 40%, 1200px);
+  color: black;
+  position: relative;
+}
+
+@media (min-width: 599px) {
+  #directionParagraph .fa-arrow-right {
+    font-size: 2em;
+   position: absolute;
+   top: -38px;
+  }
+}
+
+#directionParagraph button {
+  color: blue;
+  margin-inline: auto;
+  position: relative;
+  top: -32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* directionparagraph button div  */
+#directionParagraph div {
+  margin-inline: auto;
+  width: clamp(100px, 10%, 1200px);
+  text-align: center;
+}
+
+/* direction logo color styling */
+
+#directtionLogo {
+  color: #0f0fe9;
+  font-size: 3em;
+}
+@media (min-width: 599px) {
+  #directtionLogo  .fa-clipboard-user{
+    font-size: 2em;
+  }
+}
+
+/* overall background color of the application direction */
+.applyColor {
+  background: #2e1fff;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#welcomePage {
+  width: clamp(250px, 100%, 1200px);
+  margin-inline: auto;
+  background: #a2ccee;
+  display: none;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+/* This the section for quick action */
+
+/* quick action main div */
+#quickAction {
+  padding: 8px;
+  background: white;
+  color: gray;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  cursor: not-allowed;
+  width: clamp(200px, 94%, 1200px);
+  margin-inline: auto;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 95px;
+  color: red;
+  background: rgb(15, 14, 14);
+  width: clamp(250px, 80%, 500px);
+  margin-inline: auto;
+  text-align: center;
+  background: yellow;
+  left: 50px;
+}
+
+/* quick action heading */
+#quickHead {
+  width: 100%;
+  color: #0d1f70;
+  color: gray;
+}
+
+/* quick action cards */
+
+/* first two card div */
+.combin {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  justify-content: space-around;
+}
+
+.newapplication {
+  color: gray;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px gray;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#applicationPhase2 {
+  display: none;
+}
+
+#applicationPhase3 {
+  display: none;
+}
+
+#phase4 {
+  display: none;
+}
+
+#newApplication {
+  display: none;
+}
+
+#Check {
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 10px;
+  padding: 10px 8px;
+  text-align: center;
+  color: gray;
+}
+
+/* quick Action cards logo */
+
+/* check status logo */
+.fa-hourglass {
+  font-size: 24px;
+}
+
+/* setting logo */
+.fa-gear {
+  font-size: 24px;
+}
+
+/* new Application logo */
+.fa-clipboard-user {
+  font-size: 24px;
+}
+
+/* my application logo */
+.fa-circle-check {
+  font-size: 24px;
+}
+
+/* progress section */
+
+/* progress div */
+#ProgressDiv {
+  width: clamp(250px, 90%, 1200px);
+  background: white;
+  margin-inline: auto;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-inline: auto;
+  padding-bottom: 50px;
+}
+
+#ProgressDiv h3 {
+  color: #020296;
+}
+
+/* your progress div */
+#your {
+  color: blue;
+  width: clamp(250px, 90%, 1200px);
+  margin-inline: auto;
+}
+
+#progressIndicator {
+  width: 270px;
+  height: 10px;
+  background: rgb(162, 204, 238);
+  border-radius: 15px;
+}
+
+#ProgressDiv p {
+  color: gray;
+}
+
+/* the is the bottom navigation section */
+#navigationBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  background: #ffffff;
+  border-top: 1px solid #a2ccee;
+  z-index: 1000;
+}
+
+#navigationBottom button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: clamp(100px, 50% 200px);
+  color: #7aaaad;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+#navigationBottom i {
+  margin-inline: auto;
+}
+
+/* blank input message */
+.fill {
+  color: red;
+}
+
+#wrongPassword {
+  color: red;
+  font-weight: 800;
+}
+
+/* Application Form */
+.newApplication {
+  background: #ffffff;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.newApplicationt-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  width: clamp(250px, 99%, 800px);
+  color: #020244;
+  margin-inline: auto;
+}
+
+/* New application title */
+.new {
+  margin-inline: auto;
+  width: clamp(250px, 50%, 1200px);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* new application back btn */
+#newBackbtn {
+  margin-inline: auto;
+  background: transparent;
+  border: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* process chain */
+
+.processChain {
+  color: #7aaaad;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: clamp(250px 70%, 500px);
+  margin-inline: auto;
+  justify-content: center;
+  padding-left: 8px;
+  
+}
+
+/* chain like design */
+.chain {
+  width: 50px;
+  height: 1px;
+  background: #9ba3a3;
+}
+
+/* give shape to the chain number paragraph */
+.shapeNumerDiv .first {
+  font-size: 1em;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgb(19, 15, 245);
+  border-radius: 20px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+  color: #020244;
+  font-weight: 600;
+}
+
+.shapeNumerDiv .second {
+  font-size: 1em;
+  font-weight: 600;
+  width: 15px;
+  height: 15px;
+   padding-bottom: 15px;
+  border: 1px solid #9ba3a3;
+  border-radius: 20px;
+  
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: transparent;
+  color: #020244;
+}
+
+.shapeNumerDiv .third {
+  font-size: 1em;
+  width: 15px;
+  height: 15px;
+  font-weight: 600;
+  border: 1px solid #9ba3a3;
+  border-radius: 20px;
+   padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: transparent;
+  color: #020244;
+}
+
+.shapeNumerDiv .fourth {
+  font-size: 1em;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9ba3a3;
+  border-radius: 20px;
+ padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: transparent;
+  color: #020244;
+  font-weight: 600;
+}
+
+.shapeNumerDiv .sixth {
+  font-size: 1em;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9ba3a3;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: transparent;
+  color: #020244;
+  font-weight: 600;
+}
+
+.shapeNumerDiv .fifth {
+  font-size: 1em;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #9ba3a3;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background: transparent;
+  color: #020244;
+  font-weight: 600;
+}
+
+/* new application div */
+
+/* all div in new Application section */
+.personal {
+  color: #020244;
+  width: clamp(250px, 95%, 500px);
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+/* new application paragraph */
+.personal label {
+  color: #212155;
+}
+
+.personal input {
+  width: 90%;
+  text-align: left;
+  max-width: 500px;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid rgb(66, 97, 109);
+}
+
+.personal select {
+  width: 95%;
+  max-width: 500px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.personal button {
+  width: clamp(250px, 95%, 500px);
+  margin-inline: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #0f0fe9;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+}
+
+/* ------------------------------------------------------- */
+/* blank input message */
+.feel1 {
+  color: red;
+  font-weight: 800;
+  text-align: center;
+}
+
+.next-and-back-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: 20px;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.next-and-back-btn button {
+  width: 100px;
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+#backtophase1 {
+  border: 2px solid #0475ff;
+  background: transparent;
+  color: #0475ff;
+  font-weight: 700;
+}
+
+#movetophase3 {
+  border: 2px solid #0475ff;
+  background: #0475ff;
+  color: #ffff;
+  font-weight: 700;
+}
+
+/* ======================================== */
+/* passport Photo paragraph */
+.photoParagrap {
+  color: #8ec3ee;
+}
+
+/* pass port div and all other dives under it */
+.passportDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid #7aaaad;
+  width: clamp(250px, 95%, 500px);
+  margin-inline: auto;
+  justify-content: space-between;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+/* all passport section logo design */
+.passportDiv i {
+  color: #0475ff;
+  padding: 8px;
+  font-size: 24px;
+}
+
+/*all passport section card div  */
+.cardDiv {
+  padding: 2px;
+  background: #8ec3ee;
+  border-radius: 10px;
+  margin-inline: auto;
+  margin: 10px;
+}
+
+/* ========================================================================= */
+/* phase 3 button */
+#movetophase4 {
+  border: 2px solid #0475ff;
+  background: #0475ff;
+  color: #ffff;
+  font-weight: 700;
+}
+
+#backtophase2 {
+  border: 2px solid #0475ff;
+  background: transparent;
+  color: #0475ff;
+  font-weight: 700;
+}
+
+/* =========================================================================== */
+/* working on the file seletor in phase 4 */
+.smallinput {
+  width: clamp(90px, 25%, 300px);
+  color: white;
+}
+
+/* ======================================================================== */
+/* phase 4 */
+
+/* Review Details dvi */
+.ProgressDiv2 {
+  width: clamp(250px, 90%, 700px);
+  background: white;
+  margin-inline: auto;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-inline: auto;
+  border: 1px solid #7aaaad;
+  box-shadow: 1px 1px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =============================================================== */
+/* application status */
+
+#Application-Status {
+  background: white;
+  min-height: 100vh;
+  display: none;
+}
+
+.correct {
+  width: 100px;
+  height: 100px;
+  background: #d5f9e651;
+  max-width: 110px;
+  max-height: 110px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-left: 5px solid rgb(141, 255, 200);
+  border-right: 5px solid rgb(124, 210, 213);
+
+  position: relative;
+  padding: 15px;
+}
+
+.correct .fa-file {
+  font-size: 4em;
+  color: #0475ff;
+}
+
+.correct .fa-circle-check {
+  color: green;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  font-size: 2em;
+}
+@media (min-width: 599px) {
+  .correct .fa-circle-check {
+    bottom: 5px;
+    right: -5px;
+  }
+}
+.review-correct .fa-circle-check {
+  color: green;
+  font-size: 2em;
+}
+
+#Application-Status .personals {
+  color: green;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+  width: clamp(250px, 80%, 500px);
+  margin-inline: auto;
+}
+
+#Application-Status button {
+  color: white;
+  border: none;
+  background: #0f0fe9;
+  padding: 20px;
+  font-size: 1.3em;
+  border-radius: 15px;
+}
+
+.return {
+  width: clamp(250px, 50%, 500px);
+  margin-inline: auto;
+
+  text-align: center;
+  margin-top: 30px;
+}
+
+#backtophase3 {
+  background: transparent;
+  border-color: #0475ff;
+  color: #0475ff;
+}
+
+#Finalsubmit {
+  background: #0475ff;
+  color: white;
+  border: none;
+}

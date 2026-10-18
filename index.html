@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width initial-scale = 1.0" />
+    <title>National ID</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <!-- Landing interface -->
+    <main id="landingPage">
+      <div id="landing">
+        <div id="logoImage">
+          <img
+            src="Picsart_26-10-11_14-32-43-290.png"
+            alt="sierra leone logo"
+          />
+        </div>
+
+        <div class="National">
+          <h1>National ID</h1>
+          <p>Your Identity, Our Priority</p>
+        </div>
+        <div id="safer">
+          <p>
+            A safer, smarter and, more <br />
+            connected sierra Leone
+          </p>
+        </div>
+
+        <!-- get started section -->
+        <div id="get">
+          <button id="getStarted">Get Started</button>
+        </div>
+
+        <!-- Already has an account -->
+        <div id="login">
+          <p>
+            Already have an account? <span><a href="login.html">Login</a></span>
+          </p>
+        </div>
+      </div>
+
+      <!-- =========================================================== -->
+      <!-- Get started section -->
+      <div id="createAccount">
+        <!-- create account heading -->
+        <div id="createAccount-title">
+          <div>
+            <button class="backbtn" id="bactTolanding">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="account">
+            <p>Create Account</p>
+          </div>
+        </div>
+
+        <!-- create account intro -->
+        <div class="intro">
+          <p>
+            Let's get you started. Create your account to begin your National ID
+            application
+          </p>
+        </div>
+
+        <!-- inputs field for collecting user info -->
+
+        <!-- full name input -->
+        <div class="inputsfullname">
+          <div><i class="fa-regular fa-user"></i></div>
+          <div><p>Full Name</p></div>
+
+          <div>
+            <input
+              class="input"
+              type="text"
+              id="fullName"
+              placeholder=" Enter Full Name"
+              required
+            />
+            <p class="fill" id="fill"></p>
+          </div>
+        </div>
+        <br />
+
+        <!-- phone number input -->
+        <div class="inputsfullname">
+          <div><i class="fa-solid fa-phone"></i></div>
+          <div><p>phone Number</p></div>
+          <div>
+            <input
+              class="input"
+              type="number"
+              id="phonenumber"
+              placeholder="+232***************"
+              required
+            />
+            <p class="fill" id="fill2"></p>
+          </div>
+        </div>
+        <br />
+
+        <!-- Email input -->
+        <div class="inputsfullname">
+          <div><i class="fa-solid fa-envelope"></i></div>
+          <div><p>Email Address</p></div>
+          <div>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <p class="fill" id="fill3"></p>
+          </div>
+        </div>
+        <br />
+
+        <!-- password input -->
+        <div class="inputsfullname">
+          <div><i class="fa-solid fa-lock"></i></div>
+          <div><p>Password</p></div>
+          <div>
+            <input
+              class="input"
+              type="password"
+              id="password"
+              placeholder="Create Password"
+              required
+            />
+            <p class="fill" id="fill4"></p>
+          </div>
+        </div>
+        <br />
+
+        <!-- password input -->
+        <div class="inputsfullname">
+          <div><i class="fa-solid fa-lock"></i></div>
+          <div><p>Confirm Password</p></div>
+          <div>
+            <input
+              class="input"
+              type="password"
+              id="passwordConfirm"
+              placeholder="Confirm password"
+              required
+            />
+            <p class="fill" id="fill5"></p>
+          </div>
+        </div>
+        <br />
+        <p id="wrongPassword"></p>
+        <div class="submitDiv">
+          <button id="submit">Create Account</button>
+        </div>
+
+        <!-- Terms and conditions -->
+        <div id="condition">
+          <p>
+            By creating an account, you agree to our
+            <span>Terms & condition</span> and <span>Privacy Policy.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- this is the home or dash board -->
+      <div id="welcomePage">
+        <!-- the dash board head -->
+        <div id="dashboardHead">
+          <div id="userName">
+            <p><span id="usergreeting"></span> <br> you're welcome</p>
+          </div>
+
+          <div id="userLogo">
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+
+        <!-- the application area -->
+        <div class="applyColor">
+          <div id="apply">
+            <!-- the logo for application -->
+            <div id="directtionLogo">
+              <i class="fa-solid fa-clipboard-user"></i>
+            </div>
+
+            <!-- the paragraph to tell the user what to do -->
+            <div id="directionParagraph">
+              <h2>Apply for Your National ID</h2>
+              <p>Get you National ID quickly and easily</p>
+              <div>
+                <button id="moveToNewApplication">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The quick action section -->
+
+        <div id="quickAction">
+          <div id="quickHead">
+            <h3>Quick Actions</h3>
+          </div>
+          <div class="absolute">
+           <h3> This section will be coming soon</h3>
+          </div>
+          <div class="combin">
+            <!-- new Application Div -->
+
+
+            <div class="newapplication" id="newApplications">
+              <div>
+                <div><i class="fa-solid fa-clipboard-user"></i></div>
+                <div><p>New Application</p></div>
+              </div>
+            </div>
+
+            <!-- Check status div -->
+            <div id="Check" class="newapplication" >
+              <div><i class="fa-regular fa-hourglass"></i></div>
+              <div><p>Check Status</p></div>
+            </div>
+
+            <!-- my application div -->
+            <div class="newapplication">
+              <div>
+                <div><i class="fa-solid fa-circle-check"></i></div>
+                <div><p>My Application</p></div>
+              </div>
+            </div>
+
+            <!-- setting div -->
+            <div class="newapplication">
+              <div>
+                <div><i class="fa-solid fa-gear"></i></div>
+                <div><p>Setting</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="your">
+          <h3>Your Progress</h3>
+        </div>
+
+        <!-- Progress section -->
+        <div id="ProgressDiv">
+          <div>
+            <h3>Complete You application</h3>
+          </div>
+          <div id="progressIndicator"></div>
+          <p>0<span id="zero"></span> of 6 steps</p>
+        </div>
+
+        <!-- bottom nav -->
+        <div id="navigationBottom">
+          <button class="homeBtn">
+            <i class="fa-regular fa-bell"></i>
+            Home
+          </button>
+
+          <button class="homeBtn">
+            <i class="fa-solid fa-clipboard-user"></i>Application
+          </button>
+
+          <button class="homeBtn">
+            <i class="fa-regular fa-bell"></i>
+            Notification
+          </button>
+
+          <button class="homeBtn">
+            <i class="fa-solid fa-user-tie"></i>
+            Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------ -->
+      <!-- phase 1 -->
+      <!-- Application form -->
+      <div id="newApplication" class="newApplication">
+        <div class="newApplicationt-title">
+          <div class="backbtn">
+            <button id="newBackbtn">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+          </div>
+          <div class="new">
+            <p>New Application</p>
+          </div>
+        </div>
+
+        <div class="processChain">
+          <div class="shapeNumerDiv"><p class="first" id="first">1</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="second">2</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="third">3</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="fourth">4</p></div>
+        </div>
+
+        <div class="personal"><h3>Personal Details</h3></div>
+
+        <div class="personal">
+          <p>
+            Please provide your personal information exactly as it appears on
+            your documents.
+          </p>
+        </div>
+
+        <div class="personal" id="applicationInput">
+          <label for="fullNameApplication">Full Name*</label><br />
+          <input
+            type="text"
+            id="fname"
+            placeholder="Enter your Full Name"
+          /><br /><br />
+          <p id="feel1" class="feel1"></p>
+          <br />
+
+          <label for="dateOfBirthApplication">Date of Birth*</label><br />
+          <input type="date" id="DOB" /><br /><br />
+          <p id="feel2" class="feel1"></p>
+          <br />
+
+          <label for="gender">Gender*</label><br />
+          <select id="gender">
+            <option value="">Choose you gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option></select
+          ><br /><br />
+          <p id="feel3" class="feel1"></p>
+          <br />
+
+          <label for="place of Birth"> place of Birth</label>
+          <input
+            type="text"
+            id="placeOfBirth"
+            placeholder="Enter place of birth"
+          />
+          <br /><br />
+          <p id="feel4" class="feel1"></p>
+          <br />
+
+          <button id="phase1">Next</button>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------- -->
+      <!-- phase 2 -->
+      <div id="applicationPhase2" class="newApplication">
+        <div class="newApplicationt-title">
+          <div class="new">
+            <p>New Application</p>
+          </div>
+        </div>
+
+        <div class="processChain">
+          <div class="shapeNumerDiv"><p class="first" id="first">1</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="second" id="second">2</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="third">3</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="fourth" id="">4</p></div>
+        </div>
+
+        <div class="personal"><h3>Address & Contact Details</h3></div>
+        <div class="personal">
+          <p>Please provide you current residential and Contact information</p>
+        </div>
+
+        <div class="personal">
+          <label for="currentAddress">Current Address*</label><br />
+          <input
+            type="text"
+            id="Address"
+            placeholder=" Enter your full address"
+          />
+          <br />
+          <p class="feel1" id="feelone"></p>
+          <br />
+
+          <label for="currentAddress">Town/City/Village</label><br />
+          <input
+            type="text"
+            id="town"
+            placeholder="Enter town or city or village "
+          />
+          <br />
+          <p class="feel1" id="feeltwo"></p>
+          <br />
+
+          <label for="currentAddress">District*</label><br />
+          <select name="" id="districts">
+            <option value="">Select Your District</option>
+            <option value="Kailahun District">Kailahun District</option>
+            <option value="Kenema District">Kenema District</option>
+            <option value="Kono District">Kono District</option>
+            <option value="Bombali District">Bombali District</option>
+            <option value="Tonkolili District">Tonkolili District</option>
+            <option value="Falaba District">Falaba District</option>
+            <option value="Koinadugu District">Koinadugu District</option>
+            <option value="Kambia District">Kambia District</option>
+            <option value="Karene District">Karene District</option>
+            <option value="Port Loko District">Port Loko District</option>
+            <option value="Bo District">Bo District</option>
+            <option value="Bonthe District">Bonthe District</option>
+            <option value="Moyamba District">Moyamba District</option>
+            <option value="Pujehun District">Pujehun District</option>
+            <option value="Western Area Urban">Western Area Urban</option>
+            <option value="Western Area Rural">Western Area Rural</option>
+          </select>
+          <br />
+          <p class="feel1" id="feelthree"></p>
+          <br />
+
+          <label for="">Phone Number</label>
+          <input
+            type="number"
+            id="phoneNumber"
+            placeholder="Enter your Phone Number"
+          />
+          <br />
+          <p class="feel1" id="feelfourth"></p>
+          <br />
+
+          <label for="">Email Address (optional)</label>
+          <input
+            type="email"
+            name=""
+            id="emailAddress"
+            placeholder="Enter email address"
+          />
+        </div>
+
+        <div class="next-and-back-btn">
+          <div><button id="backtophase1">Back</button></div>
+
+          <div><button id="movetophase3">Next</button></div>
+        </div>
+      </div>
+
+      <!-- ================================================= -->
+      <!-- phase 3 -->
+      <div id="applicationPhase3" class="newApplication">
+        <div class="newApplicationt-title">
+          <div class="new">
+            <p>New Application</p>
+          </div>
+        </div>
+
+        <div class="processChain">
+          <div class="shapeNumerDiv"><p class="first" id="first">1</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="second" id="second">2</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="third" id="third">3</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="fourth" id="">4</p></div>
+        </div>
+
+        <div class="personal"><h3>Upload Document</h3></div>
+
+        <div class="personal">
+          <p>
+            Please upload clear and valid copies of your documents. Accepted
+            formats: <span>JPG, PNG, PDF</span>
+          </p>
+        </div>
+
+        <div class="passportDiv">
+          <div class="cardDiv"><i class="fa-solid fa-file-invoice"></i></div>
+          <div class="personal">
+            <h4 id="phas3BirthDisappear">Birth Certificate</h4>
+            <p class="photoParagrap" id="photoParagrap">JPG, PNG, PDF</p>
+            <p class="feel1" id="bf"></p>
+          </div>
+          <div><input class="smallinput" type="file" id="firstfile" accept=".pdf, .jpg , .png"  /></div>
+        </div>
+        <br />
+
+        <div class="passportDiv">
+          <div class="cardDiv"><i class="fa-solid fa-address-book"></i></div>
+          <div class="personal">
+            <h4 id="Proof">Proof of Address</h4>
+            <p class="photoParagrap" id="poa">JPG, PNG, PDF</p>
+            <p class="feel1" id="pf"></p>
+          </div>
+          <div>
+            <input class="smallinput" type="file" id="secondFileAccess"   accept=".pdf, .jpg , .png"  />
+          </div>
+        </div>
+        <br />
+
+        <div class="passportDiv">
+          <div class="cardDiv"><i class="fa-solid fa-address-book"></i></div>
+          <div class="personal">
+            <h4 id="voters">Voters ID (if any)</h4>
+            <p class="photoParagrap" id="font">Front and Back</p>
+          </div>
+          <div>
+            <input class="smallinput" type="file" id="thirdFile" multiple    accept=".pdf, .jpg , .png" />
+          </div>
+        </div>
+        <br /><br /><br />
+
+        <div class="next-and-back-btn">
+          <div><button id="backtophase2">Back</button></div>
+
+          <div><button id="movetophase4">Next</button></div>
+        </div>
+      </div>
+
+      <!-- =============================================================== -->
+      <!-- phase 4 -->
+      <div id="phase4" class="newApplication">
+        <div class="newApplicationt-title">
+          <div class="new">
+            <p>New Application</p>
+          </div>
+        </div>
+
+        <div class="processChain">
+          <div class="shapeNumerDiv"><p class="first" id="first">1</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="second" id="second">2</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="third" id="third">3</p></div>
+          <div class="chain"></div>
+
+          <div class="shapeNumerDiv"><p class="fourth" id="fourth">4</p></div>
+        </div>
+
+        <div class="personal"><h3>Review Your Information</h3></div>
+
+        <div class="personal">
+          <p>
+            Please review your details before submitting. You can go back to
+            edit if needed.
+          </p>
+        </div>
+
+        <div class="ProgressDiv2">
+          <h3>Personal Details</h3>
+          <div class="name">
+            <p>Full Name</p>
+            <p id="fullname"></p>
+          </div>
+
+          <div class="name">
+            <p>Date of Birth</p>
+            <p id="dateofbirth"></p>
+          </div>
+
+          <div class="name">
+            <p>Gender</p>
+            <p id="male"></p>
+          </div>
+
+          <div class="name">
+            <p>Place of Birth</p>
+            <p id="birthp"></p>
+          </div>
+        </div>
+
+        <div class="ProgressDiv2">
+          <h3>Address & Contact</h3>
+          <div class="name">
+            <p>Address</p>
+            <p id="addressP"></p>
+          </div>
+
+          <div class="name">
+            <p>Phone Number</p>
+            <p id="phobeNumberP"></p>
+          </div>
+
+          <div class="name">
+            <p>Email</p>
+            <p id="emails"></p>
+          </div>
+
+          <div class="name">
+            <p>District</p>
+            <p id="districtsP"></p>
+          </div>
+        </div>
+
+        <div class="next-and-back-btn">
+          <div><button id="backtophase3">Back</button></div>
+
+          <div><button id="Finalsubmit">Submit</button></div>
+        </div>
+      </div>
+
+      <!-- ========================================================================== -->
+      <!-- Application Status -->
+      <div id="Application-Status">
+        <div class="newApplicationt-title">
+          <div class="new">
+            <p>Application Status</p>
+          </div>
+        </div>
+
+        <div class="correct">
+          <i class="fa-solid fa-file"></i>
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div class="personal">
+          <p>
+            Your national ID card application has been successfully submitted
+          </p>
+        </div>
+
+        <div class="personals">
+          <p>
+            Your application is under review, you will be notify once the
+            process is complete <br />
+          </p>
+          <p>Thank You</p>
+        </div>
+
+       <div class="return">
+         <button id="returntoDashBoard">Return TO Dashboard</button>
+       </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
